@@ -1,9 +1,9 @@
 package com.netcracker.library.service;
 
-import com.netcracker.library.entity.Author;
-import com.netcracker.library.entity.Book;
-import com.netcracker.library.repository.AuthorRepository;
-import com.netcracker.library.repository.BookRepository;
+import com.netcracker.library.persistence.entity.Author;
+import com.netcracker.library.persistence.entity.Book;
+import com.netcracker.library.persistence.repository.AuthorRepository;
+import com.netcracker.library.persistence.repository.BookRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

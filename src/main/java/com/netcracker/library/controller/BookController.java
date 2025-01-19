@@ -1,6 +1,6 @@
 package com.netcracker.library.controller;
 
-import com.netcracker.library.entity.Book;
+import com.netcracker.library.persistence.entity.Book;
 import com.netcracker.library.service.BookService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

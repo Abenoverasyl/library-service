@@ -1,7 +1,7 @@
 package com.netcracker.library.controller;
 
-import com.netcracker.library.entity.Author;
-import com.netcracker.library.entity.Book;
+import com.netcracker.library.persistence.entity.Author;
+import com.netcracker.library.persistence.entity.Book;
 import com.netcracker.library.service.BookService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
