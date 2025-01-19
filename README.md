@@ -28,3 +28,4 @@ cd library-microservice
 ```bash
 docker-compose up --build
 ```
+#### 4. Swagger UI, visit: http://localhost:8080/swagger-ui/index.html
