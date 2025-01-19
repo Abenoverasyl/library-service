@@ -7,3 +7,24 @@ This project is a Spring Boot microservice for managing authors and books, with 
 - PostgreSQL for data persistence
 - Docker Compose orchestration
 - Swagger OpenAPI documentation
+
+## Prerequisites
+- Docker and Docker Compose installed
+- Java 17 or higher
+- Gradle
+
+## How to run:
+
+#### 1. Clone the repository:
+```bash
+git clone https://github.com/Abenoverasyl/library-service.git
+cd library-microservice
+```
+#### 2. Build the application (optional local build)
+```bash
+./gradlew clean bootJar
+```
+#### 3. Run with Docker Compose
+```bash
+docker-compose up --build
+```
