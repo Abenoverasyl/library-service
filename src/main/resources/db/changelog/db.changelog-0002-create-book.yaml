@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-book-table
+      author: yerassyl.aben
+      changes:
+        - createTable:
+            tableName: book
+            columns:
+              - column:
+                  name: id
+                  type: SERIAL
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: title
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: author_id
+                  type: INT
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: book
+            baseColumnNames: author_id
+            referencedTableName: author
+            referencedColumnNames: id
+            constraintName: fk_book_author    # Add this
+            onDelete: CASCADE
+
+  - changeSet:
+      id: seed-book-table
+      author: yerassyl.aben
+      changes:
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: title
+                  value: 'book1'
+              - column:
+                  name: author_id
+                  valueNumeric: 1
+        - insert:
+            tableName: book
+            columns:
+              - column:
+                  name: title
+                  value: 'book2'
+              - column:
+                  name: author_id
+                  valueNumeric: 2
